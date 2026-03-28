@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AI Healthcare Support</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>AI Healthcare Support System</h1>
+
+  <!-- Patient Form -->
+  <div class="container">
+    <h2>Patient Support Form</h2>
+    <form id="patientForm">
+      <input type="text" placeholder="Name" required>
+      <input type="number" placeholder="Age" required>
+      <textarea id="symptoms" placeholder="Enter your symptoms"></textarea>
+      <button type="submit">Submit</button>
+    </form>
+    <p id="successMsg"></p>
+  </div>
+
+  <!-- Chatbot -->
+  <div class="container">
+    <h2>AI Chatbot</h2>
+    <input id="userInput" placeholder="Ask about symptoms...">
+    <button onclick="reply()">Send</button>
+    <p id="response"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
